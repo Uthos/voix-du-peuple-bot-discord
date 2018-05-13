@@ -12,7 +12,7 @@ function Ready_Check(){
 function Vote() {
     client.on('message', message => {
         if (message.author.bot === false && message.channel.type !== 'dm' && message.content.substr(0, 5) === '!vote') {
-            if (message.channel.id !=='439843245879721998') {message.channel.send("Mec, t'es conscient que c'est pas le bon canal ? Les demandes de vote c'est dans l'Assemblée Générale.");}
+            if (message.channel.id !=='439843245879721998') {message.channel.send("Les demandes de vote c'est dans l'Assemblée Générale.");}
             else {
                 if (message.content.substr(6, 6) === 'server') {
                     if (message.content.substr(13, 4) === 'name') {
